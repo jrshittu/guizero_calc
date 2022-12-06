@@ -14,10 +14,10 @@ app = App("Gui_Calc", layout="grid", bg="#000000")
 
 # functions -----------------------------
 def inputNumber(key):
-    global string, flag
-    if flag:
-        string=''
-        flag = False
+    global displayString, operatorFlag
+    if operatorFlag:
+        displayString=''
+        operatorFlag = False
     displayString = displayString + key
     display.value = displayString
 
